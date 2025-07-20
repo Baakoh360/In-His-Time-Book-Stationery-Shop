@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>In His Time Book and Stationery</title>
+       <meta name="description" content="Shop quality books, pens, notebooks, and school supplies at In His Time Book & Stationery Shop. Trusted by students and parents in Ghana.">
+    <meta name="keywords" content="books, stationery, Ghana bookshop, pens, notebooks, school supplies, affordable books, Accra stationery shop">
+    <meta name="author" content="In His Time Bookshop">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <style>
@@ -1562,6 +1565,60 @@
             
             .form-actions {
                 flex-direction: column;
+            }
+        }
+         @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        
+        @media (min-width: 768px) {
+            .container {
+                padding: 0 1.5rem;
+            }
+            .header-content {
+                padding: 0 1.5rem;
+            }
+            nav ul {
+                gap: 1.5rem;
+            }
+            nav a {
+                font-size: 1rem;
+                padding: 0.5rem 1rem;
+            }
+            .hero-title {
+                font-size: 3rem;
+            }
+            .hero-subtitle {
+                font-size: 1.2rem;
+            }
+            .product-grid {
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+                gap: 1.5rem;
+            }
+            .product-image {
+                height: 180px;
+            }
+            .contact-grid {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 2rem;
+                padding: 0;
+            }
+            .footer-social {
+                gap: 1.5rem;
+            }
+        }
+        
+        @media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) {
+            .hero {
+                min-height: calc(100vh - 60px);
+            }
+            .product-grid {
+                grid-template-columns: repeat(2, 1fr);
             }
         }
     </style>
